@@ -28,6 +28,7 @@ OR From Repository Root _(`SimpleObituaryApp/`):_
 cd client
 ```
 
+Run The Server
 ```shell
 npm install && npm run dev
 ```
