@@ -1,6 +1,6 @@
 {
-  "name": "obituary_app_server",
-  "version": "1.0.0",
+  "name": "Obituary App Server",
+  "version": "0.0.1",
   "description": "Simple Backend Server For the Obituary Application",
   "main": "index.js",
   "type": "module",
