@@ -2,11 +2,11 @@
 
 ## INSTRUCTIONS TO RUN LOCALLY
 
-1. Clone The Repository
+#### 1. Clone The Repository
 ```shell
 git clone https://github.com/CypherWhisperer/SimpleObituaryApp
 ```
-2. Install Client Dependencies And run server (Express)
+#### 2. Install Backend (Server) Dependencies And run server _(Express)._
 
 ```shell
 cd SimpleObituaryApp/server
@@ -16,16 +16,23 @@ cd SimpleObituaryApp/server
 npm install && node index.js
 ```
 
-3. Install Server Dependencies And run Client Server (Vite)
+#### 3. Install Frontend (Client) Dependencies And run Client Server _(Vite)._
 
+From `server/`:
 ```shell
-cd ../client # from server/ OR cd SimpleObituaryApp/client from repo root
+cd ../client
+```
+
+OR From Repository Root _(`SimpleObituaryApp/`):_
+```shell
+cd client
 ```
 
 ```shell
 npm install && npm run dev
 ```
-4. Access from browser
+
+#### 4. Access The Page from browser
 
 ```
 http://localhost:5173
