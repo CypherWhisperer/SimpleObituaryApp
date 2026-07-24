@@ -15,9 +15,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      '@layoutComponents': path.resolve(__dirname, './src/components/layout/index.js'),
-      '@sectionComponents': path.resolve(__dirname, './src/components/sections/index.js'),
-      '@uiComponents': path.resolve(__dirname, './src/components/ui/index.js'),
+      '@obituaryComponents': path.resolve(__dirname, './src/components/obituary/index.js'),
       '@pages':      path.resolve(__dirname, './src/pages/index.js'),
       '@hooks':      path.resolve(__dirname, './src/assets/hooks/index.js'),
       '@icons':     path.resolve(__dirname, './src/assets/icons/index.js'),
