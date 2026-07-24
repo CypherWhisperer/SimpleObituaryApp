@@ -1,5 +1,5 @@
 import { useSubmitObituary } from '@hooks'
-import { ObituaryForm } from '@sectionComponents'
+import { ObituaryForm } from '@obituaryComponents'
 
 export function SubmitObituary({ onNavigateToList }) {
   const { submitObituary } = useSubmitObituary()

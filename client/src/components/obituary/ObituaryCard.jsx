@@ -11,12 +11,13 @@ export function ObituaryCard({ obituary }) {
 
   return (
     // <article> — an obituary is meaningful and distributable on its own
-    // (e.g. a future permalink, an RSS/schema.org feed entry), which is
-    // exactly the case <article> exists for, unlike a generic <div> or
+    // (e.g. a future permalink, an RSS/schema.org feed entry).
+    // This is <article>'s purpose, unlike a generic <div> or
     // a <section> (which needs a parent context to make sense).
 
     <article className="group border-b border-border py-6 last:border-b-0">
       <header className="flex items-baseline justify-between gap-4">
+
         {/* h3: the page itself owns the h1 ("Obituaries"), and each card
             in a flat list of peers is a subsection of that — h3 keeps the
             outline correct without a redundant intermediate h2 per card.
@@ -27,7 +28,7 @@ export function ObituaryCard({ obituary }) {
 
         {/* <time datetime="..."> — screen readers and any later schema.org
             markup get the machine-readable ISO date even though the
-            visible text is reformatted to the YYYY/MM/DD your mock uses.
+            visible text is reformatted to the YYYY/MM/DD our mock uses.
         */}
         <p className="font-inter text-sm text-muted-foreground whitespace-nowrap">
           <time dateTime={born_at}>{born_at.replaceAll('-', '/')}</time>
@@ -47,11 +48,10 @@ export function ObituaryCard({ obituary }) {
         {content}
       </p>
 
-      {/* Animating grid-template-rows 0fr -> 1fr is the one clean way to
-          transition toward "height: auto" without hardcoding a max-height
-          guess. group-focus-within fires the same reveal as group-hover
-          the moment a keyboard user tabs to a link inside — no separate
-          keyboard-only code path needed.
+      {/* Animating grid-template-rows 0fr -> 1fr is the one clean way to transition toward
+          "height: auto" without hardcoding a max-height guess. group-focus-within fires the
+          same reveal as group-hover the moment a keyboard user tabs to a link inside — no
+          separate keyboard-only code path needed.
       */}
       <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-focus-within:grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-out">
         <div className="overflow-hidden">
@@ -59,9 +59,8 @@ export function ObituaryCard({ obituary }) {
             {content}
           </p>
 
-          {/* <nav><ul> — this is a set of navigational links to external
-              share targets, which is what nav+ul represents; a row of bare
-              <button>s would misrepresent them as in-page actions.
+          {/* <nav><ul> — this is a set of navigational links to external share targets, which
+              is what nav+ul represents; a row of bare <button>s would misrepresent them as in-page actions.
           */}
           <nav aria-label={`Share ${name}'s obituary`} className="mt-3">
             <ul className="flex items-center gap-3 text-muted-foreground">

@@ -67,7 +67,8 @@ export function ObituaryForm({ onSubmit, onSuccess }) {
 
       {/* type="date" over a plain text input: the browser enforces the
           YYYY-MM-DD shape and gives a native picker for free, instead of
-          us hand-parsing whatever text format a user might type. */}
+          us hand-parsing whatever text format a user might type.
+      */}
       <Field id="born_at" label="Date Of Birth" error={errors.born_at}>
         <input id="born_at" type="date" value={form.born_at}
           onChange={handleChange('born_at')} className={fieldClass('born_at')}

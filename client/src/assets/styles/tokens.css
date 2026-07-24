@@ -1,7 +1,5 @@
-/* src/styles/tokens.css */
-
 /* ---------------------------------------------------------------
-   Layer 1 — raw values from the CypherDesigns palette.
+   Layer 1 — raw values from the CypherDesigns palette (Figma Design).
    Light mode lives on :root; dark mode overrides the same
    variable names inside .dark (toggled by next-themes).
 ------------------------------------------------------------------ */

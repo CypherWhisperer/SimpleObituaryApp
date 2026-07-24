@@ -1,5 +1,5 @@
 import { useObituaryList } from '@hooks'
-import { ObituaryCard, PaginationControls } from '@sectionComponents'
+import { ObituaryCard, PaginationControls } from '@obituaryComponents'
 
 export function ObituaryList({ onNavigateToSubmit }) {
   const { entries, page, totalPages, loading, error, goToPage } = useObituaryList()
@@ -7,16 +7,11 @@ export function ObituaryList({ onNavigateToSubmit }) {
 
   return (
     <main className="max-w-2xl mx-auto px-4 py-10">
-      {/* sr-only: the design has no visible page title, but a real h1
-          still anchors the document outline for screen readers and
-          search engines — directly serves the "semantic HTML" item
-          in your section 5 deliverables.
-      */}
+      {/* An h1 anchors the document outline for screen readers and search engines */}
       <h1 className="sr-only">Obituaries</h1>
 
-      {/* ADD ENTRY sits at the top only once there's a list to sit
-          above (images 3 & 5) — in the empty state it's centered
-          below the message instead (image 1), reproduced below.
+      {/* ADD ENTRY sits at the top only once there's a list to sit. In the empty state, it's centered
+          below the message instead.
        */}
       {!isEmpty && (
         <button type="button" onClick={onNavigateToSubmit}
@@ -42,9 +37,9 @@ export function ObituaryList({ onNavigateToSubmit }) {
       )}
 
       {!loading && !error && entries.length > 0 && (
-        // h2 here is sr-only too, but its job is structural: it keeps
-        // each card's h3 a legitimate one level down, instead of
-        // skipping straight from h1 to h3.
+
+        // h2's job is structural: it keeps each card's h3 a legitimate one level down,
+        //  instead of skipping straight from h1 to h3.
         <section aria-label="Entries">
           <h2 className="sr-only">Latest Entries</h2>
           {entries.map((entry) => (

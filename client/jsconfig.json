@@ -3,14 +3,8 @@
     "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "paths": {
-      "@layoutComponents/*": [
-        "src/components/layout/index.js"
-      ],
-      "@sectionComponents/*": [
-        "src/components/sections/index.js"
-      ],
-      "@uiComponents/*": [
-        "src/components/ui/index.js"
+      "@obituaryComponents/*": [
+        "src/components/obituary/index.js"
       ],
       "@pages/*": [
         "src/pages/index.js"
