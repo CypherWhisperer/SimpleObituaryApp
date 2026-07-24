@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @import "./assets/fonts/index.css";
+@import "./assets/styles/tokens.css";
+
+@variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-space-grotesk: 'Space Grotesk', sans-serif;

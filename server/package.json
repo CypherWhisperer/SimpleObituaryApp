@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple Backend Server For the Obituary Application",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
