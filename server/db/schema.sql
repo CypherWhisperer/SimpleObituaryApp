@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS obituaries (
+  id           INTEGER PRIMARY KEY AUTOINCREMENT,
+  name         VARCHAR(255) NOT NULL,
+  born_at      VARCHAR(10) NOT NULL,   -- 'YYYY-MM-DD'
+  died_at      VARCHAR(10) NOT NULL,
+  content      TEXT NOT NULL,
+  author       VARCHAR(255) NOT NULL,
+  submitted_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  slug         VARCHAR(255) UNIQUE NOT NULL
+);

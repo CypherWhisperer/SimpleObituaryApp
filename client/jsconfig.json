@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@layoutComponents/*": [
+        "src/components/layout/index.js"
+      ],
+      "@sectionComponents/*": [
+        "src/components/sections/index.js"
+      ],
+      "@uiComponents/*": [
+        "src/components/ui/index.js"
+      ],
+      "@pages/*": [
+        "src/pages/index.js"
+      ],
+      "@hooks/*": [
+        "src/assets/hooks/index.js"
+      ],
+      "@icons/*": [
+        "src/assets/icons/index.js"
+      ],
+    }
+  }
+}

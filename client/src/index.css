@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "./assets/fonts/index.css";
+
+@theme {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
