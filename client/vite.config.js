@@ -5,7 +5,6 @@ import path from 'path'
 
 // to avoid the `__dirname is not defined` Classic Vite/ESM Error/issue:
 // Since Vite config files run as ES modules, `__dirname` isn't available.
-// Fix it by reconstructing it at the top of your `vite.config.js`:
 import { fileURLToPath} from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
