@@ -103,6 +103,7 @@ obituary-app/
     │   ├── index.css
     │   ├── main.jsx
     │   └── App.jsx
+    ├── index.html                 ← page entry point.
     ├── vite.config.js             ← proxies /api to the Express server in dev
     ├── jsconfig.json
     └── package.json
